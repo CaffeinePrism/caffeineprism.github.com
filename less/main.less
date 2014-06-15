@@ -1,0 +1,203 @@
+// out: ../css/styles.css, compress: false
+
+/* ==========================================================================
+Author's custom styles
+Scheme:
+blue: 006F99;
+green: 6DD12B;
+white: EFF1C2;
+red: F0563D;
+blue-black: 2E313D;
+========================================================================== */
+
+@import (reference)  'variables.less';
+@import (reference)  'mixins/lesshat.less';
+@import 'h5bp.less';
+@import 'hint.less';
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+
+body {
+    /*background: #006f99; */
+    font-family: "Open Sans", Helvetica, Helvetica Neue, Arial;
+}
+h1, h2, span, #footer {
+    //background-clip: text;
+    //color: transparent;
+    border-radius: .5em;
+    text-shadow: rgba(0,0,0,0.5) 0px 3px 3px;
+}
+h2 {
+    font-weight: 600;
+}
+h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+}
+h4 {
+    padding: .5em 0;
+}
+
+a:visited, a:link {
+    color: #222;
+}
+a:hover {
+    color: overlay(@red, @dark-blue);
+}
+
+.wrapper {
+    height: 100%;
+    padding: 1.5em 0;
+    margin: 0 auto;
+}
+
+#main {
+    /* http://css-tricks.com/tinted-images-multiple-backgrounds/ */
+    max-width: 100%;
+    background:
+        linear-gradient(
+            fadeout(darken(@blue, 0%), 55%),
+            fadeout(darken(@blue, 0%), 35%)
+        ), url(../img/pixel_weave.png);
+    border-bottom: 5px solid fadeout(darken(@dark-blue, 10%), 55%);
+    height: 100%;
+
+    h3 {
+        line-height: 2em;
+        span {
+            padding: .2em;
+            box-shadow: inset 0 0 10px fadeout(#000, 20%);
+        }
+    }
+
+    #name {
+        background: @dark-blue;
+        color: @green;
+    }
+    #major {
+        color: white;
+    }
+    #irvine {
+        background: #002244;
+        color: #FFDE6C;
+    }
+}
+
+#main .content{
+    text-align: center;
+    width: 60%;
+    height: 60%;
+    min-width: 200px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#robot {
+    max-width: 100%;
+    width: 20em;
+    height: auto;
+}
+/* Logo Text */
+#text {
+    font-weight: 400;
+    font-size: 3.75em;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+#pirat, #bot {
+    font-weight: 400;
+}
+#pirat {
+    //color: darken(@red, 20%);
+    color: overlay(@red, @white);
+}
+#bot {
+    //color: darken(@dark-blue, 5%);
+    color: overlay(@red, @dark-blue);
+}
+#social {
+    font-size: 1.5em;
+    display: flex;
+    & > * {
+        padding: 0 20px;
+        flex-grow: 1;
+        &:hover {
+            color: overlay(@red, @dark-blue);
+        }
+    }
+}
+
+.header {
+    text-transform: lowercase;
+
+    & > h2 {
+        margin: 0 auto;
+    }
+}
+
+.content {
+    & p {
+        margin: 0;
+    }
+}
+
+:not(#social) + .content {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    & > div {
+        margin: 0 3em 0 0;
+        order: 1;
+    }
+}
+
+#education {
+    .content > div {
+        width: auto;
+    }
+}
+
+#misc {
+    h4 {
+        height: 1em;
+    }
+    img {
+        max-width: 50%;
+        border: 10px solid @dark-blue;
+        &:hover {
+            border: 10px solid @red;
+        }
+    }
+}
+
+#footer {
+    width: 100%;
+    background: @dark-blue;
+    color: white;
+    .content {
+        display: block;
+        text-align: right;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: overlay(@red, @dark-blue);
+        }
+    }
+}
+
+.floatingHeader {
+    position: fixed;
+    top: 0;
+    visibility: hidden;
+}
+
+@import 'mediaqueries.less';

@@ -1,0 +1,102 @@
+width = default
+                           ..,;cloddxxxxxxxddolc:;'..
+                    .;lx0NMMMMMMMMMMMMMMMMMMMMMMMMMMMWXOdc,.
+                .ckNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMXx:.
+             .oXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMKl.
+           ;0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWk.
+         ,KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMd
+        dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK.
+..     OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX.
+:WWX0:dMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMx
+  ;xXWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW
+ ;MMKc00000kxxxxxxxxxxxxxxxxxkXKkxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxk00000.
+.xdc.;MXkkk.                    ......                             .kkkXMc
+     ;Mx                              .......                          oMc
+     ;Mx       ., lx ,.                      .........                 oMc
+     ;Mx      .lNo;;lXd.                              .OXKOkxdl........xMo
+     ;Mx      xN..KK' KO.                              OMMMMMMN        oMc
+     ;Mx      OX,.od..X0.                              OMMMMMMN        oMc
+     ;Mx       :WdddoNl                                '::::::;        oMc
+     ;Mx          ,:         ..   .;c:..;c:'   .'.                     oMc
+     ;Mx                    oO.;dXMMMMMMMMMMWO:.lN                     oMc
+     ,XK000.                .kNMMMMN0d;'oOXWMMMW0:                 .000KX;
+                               .,'.         ...
+                               
+width = 76
+
+                         ..';:loddxxkkkkxxddolc:,'.
+                   .:oOKWMMMMMMMMMMMMMMMMMMMMMMMMMMMN0xl;.
+               .lOWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNkc.
+            .dXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMKc
+          ;0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.
+        .OMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW:
+       ,NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMo
+cl,'. ,WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMc
+.d0XWkWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW.
+ .d0KXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMc
+.0W0,lKKKKk..................;;;;,...............................xKKKKo
+     dMo                          .......                           cMk
+     dMc         .:                     .........                   :Mk
+     dMc       Xxoxl0x                           ....odlc;,'........lMO.
+     dMc     cXd cd, O0.                             XMMMMMMd       :Mk
+     dMc     ;Nc kKc k0.                             XMMMMMMd       :Mk
+     dMc      .Nxccl0O.                              coooooo,       :Mk
+     dMc       . .x  .      .     ',. .,,.    .                     :Mk
+     dMc                   dx.,oKMMMMWMMMMNk:.;N.                   :Mk
+     oXKOOd                ,0WMMMMXOo,ckKWMMMWKl                 lOO0Xd
+                              ',.         ...
+                              
+width = 190
+                                                                                 .....''',,,,,,,,,,,,'''.....
+                                                                   .';:lodkO0KXNWWMMMMMMMMMMMMMMMMMMMMMMMMMMMWNXKK0Oxdol:;'..
+                                                          .';cdk0XWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNKkdoc,.
+                                                    .,lx0NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKOdc'.
+                                               .;oOXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKkl,.
+                                           ':xKMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMW0xc'
+                                       .ckNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMXx:.
+                                    .l0WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWOc.
+                                 .l0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWO:
+                               ,kWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMXo.
+                             :KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx.
+                           cXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWx'
+                         cKMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWO.
+                       ;KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNl
+                     .xWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMO.
+                    'KMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK'
+                   :NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN,
+                  lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN'
+                 lWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMX.
+,XOo,.          :WMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk
+'WMMMMNXXKkc.  'NMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:
+ ;XMMMMMMMMMWo.0MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMK
+   ;d0KXNWMMMMXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM:
+        .:xXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMk
+     :kNMMMMNXMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN.
+   .0MMMMMMX.kMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM,
+   cMMMMMMMl ;ooooooooooooo:;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;cd0X0xl;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:ooooooooooooo'
+  lWMMMMMNl  cMMMMMMMMMMMMM;                                              .;llll:'.                                                                               .WMMMMMMMMMMMMx
+ lKK0kdc'    cMMMMNKKKKKKKK,                                                    .;llll:'.                                                                         .0KKKKKKKXMMMMx
+             cMMMMo                                                                   .:llllc,.                                                                            ;MMMMx
+             cMMMMo                                                                         .;loool:'.                                                                     ;MMMMx
+             cMMMMo                                                                               .':loool:'.                                                              ;MMMMx
+             cMMMMo                         .;;.                                                         .':looool;'.                                                      ;MMMMx
+             cMMMMo                   .'    OMMk    ,.                                                           .,:lllllc:'.                                              ;MMMMx
+             cMMMMo                  OMMO:lxWMMNdclXMWc                                                                  ..,:ccccccc;,..                                   ;MMMMx.'.
+             cMMMMo                  ;WMMWKkdoodONMMMK.                                                                            .;WMMWXKOkxolc:;,'.....            ...';xMMMM0:,.
+             cMMMMo              .:,'xMNo.        ,kWNc';;                                                                          .WMMMMMMMMMMMMMMMMMO:::::::::::::::;,'.cMMMMx
+             cMMMMo              xMMMMK.   'cooc.   :WMMMM:                                                                         .WMMMMMMMMMMMMMMMMMo                   ;MMMMx
+             cMMMMo              'lKMM,   lMMMMMN'   dMMk:.                                                                         .WMMMMMMMMMMMMMMMMMo                   ;MMMMx
+             cMMMMo                lMN.   kMMMMMM:   cMW'                                                                           .WMMMMMMMMMMMMMMMMMo                   ;MMMMx
+             cMMMMo              l0WMMc   ,KMMMWk.   OMMNO,                                                                         .WMMMMMMMMMMMMMMMMMo                   ;MMMMx
+             cMMMMo              lWXKWNc    .''.   .kMNKNN'                                                                         .WMMMMMMMMMMMMMMMMMo                   ;MMMMx
+             cMMMMo                  :WMKl'     .,dNMK.                                                                             .WMMMMMMMMMMMMMMMMMo                   ;MMMMx
+             cMMMMo                  dMMMWMWXKKXWWWMMN;                                                                              ..................                    ;MMMMx
+             cMMMMo                  lKXc..;XMMX,..dNk,                                                                                                                    ;MMMMx
+             cMMMMo                         dNNd                                                                                                                           ;MMMMx
+             cMMMMo                                                   ;l:,.        ,lk0XNX0xc..cdOXNNXKkl,       .,:xd,                                                    ;MMMMx
+             cMMMMo                                                 'XWc       .ckNMMMMMMMMMMMMMMMMMMMMMMMNk:.      .OMO.                                                  ;MMMMx
+             cMMMMo                                                 0MN.   .:xKMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNkc.    dMMl                                                  ;MMMMx
+             cMMMMx........                                         kMMNO0XMMMMMMMMMMMMMMMMMMWWMMMMMMMMMMMMMMMMMMNK0NMMM;                                          ........lMMMMx
+             cMMMMMMMMMMMMM;                                        .0MMMMMMMMMMMMMMMMMMMMMKo..cOWMMMMMMMMMMMMMMMMMMMMNc                                          .WMMMMMMMMMMMMx
+             ;XXXXXXXXXXXXX,                                          :kXMMMMMMMMMMMMWKko;.      .,lx0NMMMMMMMMMMMMNOc.                                           .KXXXXXXXXXXXXo
+                                                                         .':clllc:;'.                  ..,;:::::;'.
