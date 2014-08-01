@@ -8,6 +8,13 @@ green: 6DD12B;
 white: EFF1C2;
 red: F0563D;
 blue-black: 2E313D;
+
+two
+blue-black: 2c3e50
+red: e74c3c
+white: ecf0f1
+blue: 3498db
+dark-blue: 2980b9
 ========================================================================== */
 
 @import (reference)  'variables.less';
@@ -17,31 +24,34 @@ blue-black: 2E313D;
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
 
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
-}
-
 body {
     /*background: #006f99; */
+    background: url(../img/ricepaper_v3.png);
+    .background-image(
+        linear-gradient(
+            fadeout(@white, 75%),
+            fadeout(@white, 75%)
+        ), url(../img/ricepaper_v3.png));
     font-family: "Open Sans", Helvetica, Helvetica Neue, Arial;
 }
-h1, h2, span, #footer {
-    //background-clip: text;
-    //color: transparent;
+
+span {
     border-radius: .5em;
+}
+
+h1, h2, span, #footer {
     text-shadow: rgba(0,0,0,0.5) 0px 3px 3px;
 }
+
 h2 {
     font-weight: 600;
 }
-h4, h5, h6 {
+h3, h4, h5, h6 {
     margin: 0;
     font-weight: 600;
-}
-h4 {
-    padding: .5em 0;
+    em {
+        font-weight: 400;
+    }
 }
 
 a:visited, a:link {
@@ -60,27 +70,48 @@ a:hover {
 #main {
     /* http://css-tricks.com/tinted-images-multiple-backgrounds/ */
     max-width: 100%;
-    background:
+    background: url(../img/fp-web.JPG);
+    .background-image(
         linear-gradient(
-            fadeout(darken(@blue, 0%), 55%),
-            fadeout(darken(@blue, 0%), 35%)
-        ), url(../img/pixel_weave.png);
-    border-bottom: 5px solid fadeout(darken(@dark-blue, 10%), 55%);
+            fadeout(@blue-black, 50%),
+            fadeout(@blue-black, 50%)
+        ), url(../img/fp-web.JPG));
+    background-size: cover;
+    background-position: 70% 15%;
+    border-bottom: 5px solid fadeout(@dark-blue, 55%);
     height: 100%;
 
+    h1 > span {
+        padding: 0 0.25em;
+        text-shadow: 0px -1px 0px #303030;
+        background: black;
+        background: fadeout(black, 20%);
+        border-radius: 0;
+    }
+
     h3 {
+        padding: 0 0.5em;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        color: white;
+        text-shadow: 0px -1px 0px #303030;
+        display: inline;
+        background: black;
+        background: fadeout(black, 20%);
         line-height: 2em;
         span {
+            white-space: nowrap;
             padding: .2em;
             box-shadow: inset 0 0 10px fadeout(#000, 20%);
         }
     }
 
     #name {
-        background: @dark-blue;
+        background: @blue-black;
         color: @green;
     }
     #major {
+        background: overlay(@blue-black, @red);
         color: white;
     }
     #irvine {
@@ -89,45 +120,54 @@ a:hover {
     }
 }
 
-#main .content{
+#main .content > div:last-child {
     text-align: center;
-    width: 60%;
-    height: 60%;
-    min-width: 200px;
-    max-width: 400px;
     margin: 0 auto;
 }
 
 #robot {
+    fill: currentColor;
+    color: white;
+    stroke: black;
+    .filter(drop-shadow(5px 5px 5px #000));
+    display: block;
     max-width: 100%;
-    width: 20em;
-    height: auto;
+    height: 10em;
+    margin: 0 auto;
 }
 /* Logo Text */
 #text {
+    color: white;
     font-weight: 400;
     font-size: 3.75em;
     max-width: 100%;
     width: auto;
     height: auto;
+
+    span > span {
+        font-weight: 400;
+
+        &:first-child {
+            //color: darken(@red, 20%);
+            color: overlay(@blue, @white);
+        }
+        &:last-child{
+            //color: darken(@dark-blue, 5%);
+            color: overlay(@red, @dark-blue);
+        }
+    }
 }
-#pirat, #bot {
-    font-weight: 400;
-}
-#pirat {
-    //color: darken(@red, 20%);
-    color: overlay(@red, @white);
-}
-#bot {
-    //color: darken(@dark-blue, 5%);
-    color: overlay(@red, @dark-blue);
-}
+
 #social {
+    padding-top: 2em;
     font-size: 1.5em;
-    display: flex;
+    .display(flex);
     & > * {
-        padding: 0 20px;
-        flex-grow: 1;
+        text-align: center;
+        margin: 0 20px;
+        float: right;
+        .flex(1 1 auto);
+        color: white;
         &:hover {
             color: overlay(@red, @dark-blue);
         }
@@ -136,43 +176,84 @@ a:hover {
 
 .header {
     text-transform: lowercase;
-
+    text-decoration: underline;
+    margin-bottom: 1.5em;
     & > h2 {
         margin: 0 auto;
     }
 }
 
-.content {
-    & p {
-        margin: 0;
+:not(#social) + .content {
+    overflow: hidden;
+    display: block;
+    & > div {
+        margin: 0 3em 0 0;
     }
 }
 
-:not(#social) + .content {
-    overflow: hidden;
-    display: flex;
-    flex-wrap: wrap;
-    & > div {
-        margin: 0 3em 0 0;
-        order: 1;
+#about {
+    p {
+        margin: 0;
+    }
+    img {
+        width: 100px;
+        margin-right: 20px;
+        border-radius: 100%;
+        float: left;
+        border: 5px solid @blue;
     }
 }
 
 #education {
-    .content > div {
-        width: auto;
+    .content {
+        & > div {
+            & h4 {
+                margin: 0;
+                padding: 0;
+            }
+        }
     }
 }
 
 #misc {
-    h4 {
-        height: 1em;
-    }
     img {
-        max-width: 50%;
-        border: 10px solid @dark-blue;
+        max-width: 30%;
+        border: 5px solid @dark-blue;
         &:hover {
-            border: 10px solid @red;
+            border-color: @red;
+        }
+    }
+    .content {
+        & > div {
+            margin-bottom: 2em;
+        }
+        .wip {
+            & > a {
+                margin: 0;
+                position: relative;
+
+                &:hover > img {
+                    border-color: @red;
+                }
+
+                &:before {
+                    content: 'WIP';
+                    display: block;
+                    position: absolute;
+                    z-index: 10;
+                    top: 0;
+                    width: 100%;
+                    /* background: url(http://localhost:8080/web/img/root-word-small.png); */
+                    text-align: center;
+                    color: @white;
+                    font-size: 2em;
+                    font-weight: 600;
+                }
+            }
+
+            & img {
+                .filter(brightness(0.5));
+            }
         }
     }
 }
@@ -180,9 +261,14 @@ a:hover {
 #footer {
     width: 100%;
     background: @dark-blue;
+    background: fadeout(@dark-blue, 25%);
     color: white;
+    .header {
+        display: inline;
+        float: left;
+    }
     .content {
-        display: block;
+        display: block !important;
         text-align: right;
     }
     a {
@@ -201,3 +287,4 @@ a:hover {
 }
 
 @import 'mediaqueries.less';
+@import 'print.less';

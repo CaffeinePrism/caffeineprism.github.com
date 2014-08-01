@@ -1,21 +1,44 @@
 @media only screen and (min-width: 920px) {
+    h6 {
+        line-height: 1.33em;
+        margin: 0.67em 0;
+    }
+
+    #main .content > div:last-child {
+        text-align: left;
+    }
+
+    #robot {
+        margin: 0 2em;
+        float: left;
+    }
+
     .header {
         float: left;
         width: 15%;
         text-align: right;
         padding-right: 50px;
+        text-decoration: none;
     }
 
     :not(#social) + .content {
-        flex-wrap: nowrap;
         & > div {
-            width: 50%;
+            width: 42%; // 85%/2
+            float: left;
         }
     }
 
-    #misc .content {
-        & > div {
-            width: 100%;
-        }
+    #misc {
+      img {
+        max-width: 50%;
+      }
+      .content {
+          & > div {
+              //width: 27%;
+              p {
+                  margin: 0;
+              }
+          }
+      }
     }
 }
