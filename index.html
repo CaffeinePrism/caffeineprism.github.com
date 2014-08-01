@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>ohrli</title>
-        <meta name="description" content="">
+        <meta name="description" content="ohrli">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
@@ -17,13 +17,14 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="main-container">
+        <div class="main-container" itemscope itemtype="http://schema.org/Person">
             <div class="bg" id="main">
                 <div class="wrapper clearfix">
                     <div class="content">
                         <div>
                             <h1 id="text"><span><span>oh</span>r<span>li</span></span></h1>
-                            <h3>Hello, my name is <span id="name">Richard Li.</span> I'm a <span id="major">Materials Science Engineering</span> student at <span id="irvine">UC Irvine.</span></h3>
+                            <h3>
+                                Hello, my name is <span itemprop="name" id="name">Richard Li</span>. I'm a <span itemprop="jobTitle"><span id="major">Materials Science Engineering</span> student</span> at <span id="irvine">UC Irvine</span>.</h3>
 
                             <div id="social">
                                 <a href="https://github.com/CaffeinePrism" class="hint--bottom" data-hint="github"><span class="fa">&#xf09b; </span></a>
@@ -37,9 +38,9 @@
 
             <div class="wrapper clearfix" id="about">
                 <div class="header"><h2>About Me</h2></div>
-                <div class="content" style="display: block;">
-                    <img src="img/square.png" alt="avatar">
-                    <p>I grew up in the suburbs of the San Francisco Bay Area.
+                <div class="content" itemprop="description">
+                    <img src="img/square.png" alt="avatar" itemprop="image">
+                    <p>I grew up in the suburbs of the <span itemprop="homeLocation">San Francisco Bay Area</span>.
                     I spent most of that time indoors reading, watching science programs on PBS, taking apart old or broken electronics, or tackling programming languages.
                     Occasionally I'll stay up all night to fix stuff I break.
                     </p><br>
@@ -75,8 +76,8 @@
                 <div class="header"><h2>Education</h2></div>
                 <div class="content">
                         <div>
-                        <h4>University of California, Irvine</h4>
-                            <em>Irvine, CA</em>
+                        <h4 itemprop="affiliation">University of California, Irvine</h4>
+                            <em itemprop="workLocation">Irvine, CA</em>
                             <h4>2014 - present</h4>
                             <h4><em>B.S. Materials Science Engineering</em></h4>
                         </div>
