@@ -1,3 +1,24 @@
+@import (reference)  'variables.less';
+@import (reference)  'mixins/lesshat.less';
+
+// modified from http://codepen.io/heydon/pen/bcdrl
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+    &:nth-child(@{n}n+1):nth-last-child(@{i}) {
+        width: floor(@content-width / @i);
+    }
+    & ~ div {
+        width: floor(@content-width / @i);
+    }
+
+    & when (@i = 1) {
+        p {
+            float: right;
+            .calc(width, ~'100% - 200px');
+        }
+    }
+    .generate-columns(@n, (@i + 1));
+}
+
 @media only screen and (min-width: 920px) {
     h6 {
         line-height: 1.33em;
@@ -15,7 +36,7 @@
 
     .header {
         float: left;
-        width: 15%;
+        width: 100% - @content-width;
         text-align: right;
         padding-right: 50px;
         text-decoration: none;
@@ -23,22 +44,22 @@
 
     :not(#social) + .content {
         & > div {
-            width: 42%; // 85%/2
+            width: floor(@content-width / 2); // 85%/2
+            .generate-columns(2);
             float: left;
         }
     }
 
     #misc {
-      img {
-        max-width: 50%;
-      }
-      .content {
-          & > div {
-              //width: 27%;
-              p {
-                  margin: 0;
-              }
-          }
-      }
+        img {
+            max-width: 175px;
+        }
+        .content {
+            & > div {
+                p {
+                    margin: 0;
+                }
+            }
+        }
     }
 }
