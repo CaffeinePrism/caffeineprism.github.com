@@ -19,10 +19,14 @@ dark-blue: 2980b9
 
 @import (reference)  'variables.less';
 @import (reference)  'mixins/lesshat.less';
-@import 'h5bp.less';
 @import 'hint.less';
 
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
 
 body {
     /*background: #006f99; */
@@ -32,14 +36,14 @@ body {
             fadeout(@white, 75%),
             fadeout(@white, 75%)
         ), url(../img/ricepaper_v3.png));
-    font-family: "Open Sans", Helvetica, Helvetica Neue, Arial;
+    font: 16px/26px "Open Sans", Helvetica, Helvetica Neue, Arial;
 }
 
 span {
     border-radius: .5em;
 }
 
-h1, h2, a>span, h3>span, #footer {
+h1, h2, a>span, h3>span, footer {
     text-shadow: rgba(0,0,0,0.5) 0px 3px 3px;
 }
 
@@ -61,13 +65,15 @@ a:hover {
     color: overlay(@red, @dark-blue);
 }
 
-.wrapper {
+header>div, section, footer>div {
+    width: 100%;
+    max-width: 90%;
     height: 100%;
     padding: 1.5em 0;
     margin: 0 auto;
 }
 
-#main {
+header {
     /* http://css-tricks.com/tinted-images-multiple-backgrounds/ */
     max-width: 100%;
     background: url(../img/fp-web.jpg);
@@ -120,7 +126,7 @@ a:hover {
     }
 }
 
-#main .content > div:last-child {
+header > div:last-child {
     text-align: center;
     margin: 0 auto;
 }
@@ -164,16 +170,18 @@ a:hover {
     }
 }
 
-.header {
+// header
+section > h2:first-child, footer>h2:first-child {
     text-transform: lowercase;
     text-decoration: underline;
-    margin-bottom: 1.5em;
+    margin: 0 0 1.5em 0;
     & > h2 {
         margin: 0 auto;
     }
 }
 
-:not(#social) + .content {
+//content
+:not(#social) + section>div, footer>div {
     overflow: hidden;
     display: block;
     & > div {
@@ -187,6 +195,7 @@ a:hover {
     }
     img {
         width: 100px;
+        height: 100px;
         margin-right: 20px;
         border-radius: 100%;
         float: left;
@@ -195,7 +204,8 @@ a:hover {
 }
 
 #education {
-    .content {
+    // content
+    & > div {
         & > div {
             & h4 {
                 margin: 0;
@@ -207,17 +217,19 @@ a:hover {
 
 #misc {
     img {
+        vertical-align: middle;
         max-width: 30%;
         border: 5px solid @dark-blue;
         &:hover {
             border-color: @red;
         }
     }
-    .content {
+    // content
+    & > div {
         & > div {
             margin-bottom: 2em;
         }
-        .wip {
+        [data-wip] {
             & > a {
                 margin: 0;
                 position: relative;
@@ -233,11 +245,11 @@ a:hover {
                     z-index: 10;
                     top: 0;
                     width: 100%;
-                    /* background: url(http://localhost:8080/web/img/root-word-small.png); */
                     text-align: center;
-                    color: @white;
+                    color: #ecf0f1;
                     font-size: 2em;
                     font-weight: 600;
+                    background: fadeout(black, 30%);
                 }
             }
 
@@ -248,32 +260,33 @@ a:hover {
     }
 }
 
-#footer {
-    width: 100%;
+footer {
     background: @dark-blue;
     background: fadeout(@dark-blue, 25%);
     color: white;
-    .header {
-        display: inline;
-        float: left;
+    // wrapper
+    & > div {
+        padding-bottom: 0;
+        // header
+        & > h2:first-child {
+            margin-top: 0;
+            display: inline;
+            float: left;
+        }
+        // content
+        & > div {
+            width: 100%;
+            display: block !important;
+            text-align: right;
+        }
     }
-    .content {
-        display: block !important;
-        text-align: right;
-    }
-    a {
+    a, a:visited, a:link {
         color: white;
         text-decoration: none;
         &:hover {
             color: overlay(@red, @dark-blue);
         }
     }
-}
-
-.floatingHeader {
-    position: fixed;
-    top: 0;
-    visibility: hidden;
 }
 
 @import 'mediaqueries.less';
