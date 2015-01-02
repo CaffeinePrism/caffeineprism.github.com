@@ -74,7 +74,7 @@ header > div > div {
 header > div > div p {
   margin: 0;
 }
-@media screen and (max-width: 384px) {
+@media screen and (max-width: 640px) {
   header > div {
     width: 85%;
     top: 5%;
