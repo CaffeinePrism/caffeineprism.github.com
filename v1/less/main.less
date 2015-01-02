@@ -1,0 +1,293 @@
+// out: ../css/styles.css, compress: false
+
+/* ==========================================================================
+Author's custom styles
+Scheme:
+blue: 006F99;
+green: 6DD12B;
+white: EFF1C2;
+red: F0563D;
+blue-black: 2E313D;
+
+two
+blue-black: 2c3e50
+red: e74c3c
+white: ecf0f1
+blue: 3498db
+dark-blue: 2980b9
+========================================================================== */
+
+@import (reference)  'variables.less';
+@import (reference)  'mixins/lesshat.less';
+@import 'hint.less';
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,400,600);
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+body {
+    /*background: #006f99; */
+    background: url(../img/ricepaper_v3.png);
+    .background-image(
+        linear-gradient(
+            fadeout(@white, 75%),
+            fadeout(@white, 75%)
+        ), url(../img/ricepaper_v3.png));
+    font: 16px/26px "Open Sans", Helvetica, Helvetica Neue, Arial;
+}
+
+span {
+    border-radius: .5em;
+}
+
+h1, h2, a>span, h3>span, footer {
+    text-shadow: rgba(0,0,0,0.5) 0px 3px 3px;
+}
+
+h2 {
+    font-weight: 600;
+}
+h3, h4, h5, h6 {
+    margin: 0;
+    font-weight: 600;
+    em {
+        font-weight: 400;
+    }
+}
+
+a:visited, a:link {
+    color: #222;
+}
+a:hover {
+    color: overlay(@red, @dark-blue);
+}
+
+header>div, section, footer>div {
+    width: 100%;
+    max-width: 90%;
+    height: 100%;
+    padding: 1.5em 0;
+    margin: 0 auto;
+}
+
+header {
+    /* http://css-tricks.com/tinted-images-multiple-backgrounds/ */
+    max-width: 100%;
+    background: url(../img/fp-web.jpg);
+    .background-image(
+        linear-gradient(
+            fadeout(@blue-black, 50%),
+            fadeout(@blue-black, 50%)
+        ), url(../img/fp-web.jpg));
+    background-size: cover;
+    background-position: 70% 15%;
+    border-bottom: 5px solid fadeout(@dark-blue, 55%);
+    height: 100%;
+
+    h1 > span {
+        padding: 0 0.25em;
+        text-shadow: 0px -1px 0px #303030;
+        background: black;
+        background: fadeout(black, 20%);
+        border-radius: 0;
+    }
+
+    h3 {
+        padding: 0 0.5em;
+        -webkit-box-decoration-break: clone;
+        box-decoration-break: clone;
+        color: white;
+        text-shadow: 0px -1px 0px #303030;
+        display: inline;
+        background: black;
+        background: fadeout(black, 20%);
+        line-height: 2em;
+        span[id] {
+            white-space: nowrap;
+            padding: .2em;
+            box-shadow: inset 0 0 10px fadeout(#000, 20%);
+        }
+    }
+
+    #name {
+        background: @blue-black;
+        color: @green;
+    }
+    #major {
+        background: overlay(@blue-black, @red);
+        color: white;
+    }
+    #irvine {
+        background: #002244;
+        color: #FFDE6C;
+    }
+}
+
+header > div:last-child {
+    text-align: center;
+    margin: 0 auto;
+}
+
+/* Logo Text */
+#text {
+    color: white;
+    font-weight: 400;
+    font-size: 3.75em;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+
+    span > span {
+        font-weight: 400;
+
+        &:first-child {
+            //color: darken(@red, 20%);
+            color: overlay(@blue, @white);
+        }
+        &:last-child{
+            //color: darken(@dark-blue, 5%);
+            color: overlay(@red, @dark-blue);
+        }
+    }
+}
+
+#social {
+    padding-top: 2em;
+    font-size: 1.5em;
+    .display(flex);
+    & > * {
+        text-align: center;
+        margin: 0 20px;
+        float: right;
+        .flex(1 1 auto);
+        color: white;
+        &:hover {
+            color: overlay(@red, @dark-blue);
+        }
+    }
+}
+
+// header
+section > h2:first-child, footer>h2:first-child {
+    text-transform: lowercase;
+    text-decoration: underline;
+    margin: 0 0 1.5em 0;
+    & > h2 {
+        margin: 0 auto;
+    }
+}
+
+//content
+:not(#social) + section>div, footer>div {
+    overflow: hidden;
+    display: block;
+    & > div {
+        margin: 0 3em 1.5em 0;
+    }
+}
+
+#about {
+    p {
+        margin: 0;
+    }
+    img {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        border-radius: 100%;
+        float: left;
+        border: 5px solid @blue;
+    }
+}
+
+#education {
+    // content
+    & > div {
+        & > div {
+            h4 {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+#misc {
+    img {
+        vertical-align: middle;
+        max-width: 30%;
+        border: 5px solid @dark-blue;
+        &:hover {
+            border-color: @red;
+        }
+    }
+    // content
+    & > div {
+        & > div {
+            margin-bottom: 2em;
+        }
+        [data-wip] {
+            & > a {
+                margin: 0;
+                position: relative;
+
+                &:hover > img {
+                    border-color: @red;
+                }
+
+                &:before {
+                    content: 'WIP';
+                    display: block;
+                    position: absolute;
+                    z-index: 10;
+                    top: 0;
+                    width: 100%;
+                    text-align: center;
+                    color: #ecf0f1;
+                    font-size: 2em;
+                    font-weight: 600;
+                    background: fadeout(black, 30%);
+                }
+            }
+
+            & img {
+                .filter(brightness(0.5));
+            }
+        }
+    }
+}
+
+footer {
+    background: @dark-blue;
+    background: fadeout(@dark-blue, 25%);
+    color: white;
+    // wrapper
+    & > div {
+        padding-bottom: 0;
+        // header
+        & > h2:first-child {
+            margin-top: 0;
+            display: inline;
+            float: left;
+        }
+        // content
+        & > div {
+            width: 100%;
+            display: block !important;
+            text-align: right;
+        }
+    }
+    a, a:visited, a:link {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            color: overlay(@red, @dark-blue);
+        }
+    }
+}
+
+@import 'mediaqueries.less';
+@import 'print.less';

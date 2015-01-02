@@ -1,0 +1,68 @@
+@import (reference)  'variables.less';
+@import (reference)  'mixins/lesshat.less';
+
+// modified from http://codepen.io/heydon/pen/bcdrl
+.generate-columns(@n, @i: 1) when (@i =< @n) {
+    &:nth-child(@{n}n+1):nth-last-child(@{i}) {
+        width: floor(@content-width / @i);
+    }
+    & ~ div {
+        width: floor(@content-width / @i);
+    }
+
+    & when (@i = 1) {
+        p {
+            float: right;
+            .calc(width, ~'100% - 200px');
+        }
+    }
+    .generate-columns(@n, (@i + 1));
+}
+
+@media only screen and (min-width: 1140px) {
+    header>div, section, footer>div {
+        width: 100%;
+        max-width: 1026px; /* 1140px - 10% for margins */
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 920px) {
+    h6 {
+        line-height: 1.33em;
+        margin: 0.67em 0;
+    }
+
+    header>div:last-child {
+        text-align: left;
+    }
+
+    section > h2:first-child, footer>div>h2:first-child {
+        float: left;
+        width: 100% - @content-width;
+        text-align: right;
+        padding-right: 50px;
+        text-decoration: none;
+    }
+
+    :not(#social) + section>div {
+        & > div {
+            width: floor(@content-width / 2); // 85%/2
+            .generate-columns(2);
+            float: left;
+        }
+    }
+
+    #misc {
+        img {
+            max-width: 175px;
+        }
+        section > div {
+            & > div {
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
