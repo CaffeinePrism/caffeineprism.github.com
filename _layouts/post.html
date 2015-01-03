@@ -2,5 +2,5 @@
 layout: main
 ---
 <h2>{{ page.title }}</h2>
-<em>{{ page.date }}</em>
+<em>{{ page.date | date_to_string }}</em>
 {{ content }}

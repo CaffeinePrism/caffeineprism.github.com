@@ -7,7 +7,7 @@ html {
 }
 
 body {
-    background: url(../img/twinkle_twinkle.png);
+    background: url(../img/footer_lodyas.png);
     color: white;
 }
 
@@ -143,6 +143,13 @@ header {
     li {
         list-style-type: none;
     }
+}
+
+#more {
+    font-size: 1.33em;
+    display: block;
+    margin-top: 50px;
+    text-align: right;
 }
 
 @media screen and (max-width: 640px) {

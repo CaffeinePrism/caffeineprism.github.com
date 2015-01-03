@@ -24,7 +24,9 @@ I also bake from scratch!
 </div>
 {% endfor %}
 
-## lastest blog posts
+## latest blog posts
 {% for post in site.posts limit:5 %}
-<a href="{{ post.url }}">{{ post.title }}</a>
+<ul class="chron">
+    <li>{{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+</ul>
 {% endfor %}

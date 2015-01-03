@@ -1,1 +1,3 @@
+sass:
+    style: :compact
 permalink: "/blog/:title"
