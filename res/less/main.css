@@ -2,6 +2,10 @@
 html {
   font: 16px/24px "Open Sans", Helvetica, "Helvetica Neue", Arial;
 }
+body {
+  background: url(../img/twinkle_twinkle.png);
+  color: white;
+}
 nav,
 header {
   text-shadow: 0px 1px black;
@@ -11,13 +15,12 @@ nav {
   position: absolute;
   bottom: 0;
   z-index: 100;
-  font-size: .8em;
+  font-size: .95em;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
-  color: white;
 }
 nav ul {
   list-style: none;
-  padding: 20px;
+  padding: 5px 20px;
 }
 nav ul li {
   display: inline;
@@ -46,9 +49,8 @@ header > div {
 }
 header > div > div {
   position: absolute;
-  top: 10%;
-  left: 10%;
-  bottom: 25%;
+  top: 50px;
+  left: 75px;
   z-index: 100;
   color: white;
   text-align: left;
@@ -81,8 +83,29 @@ header > div > div > div p {
   margin: 0;
 }
 #content {
-  width: 560px;
-  margin: 50px auto 0;
+  width: 95%;
+  max-width: 960px;
+  margin: 25px auto 75px;
+}
+#content h2 {
+  margin-top: 75px;
+}
+#content a {
+  color: #90A7BF;
+}
+#content a:hover {
+  color: white;
+}
+.project {
+  padding: 7px 0;
+}
+.project span {
+  font: 0.8em/0.8em monospace;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.75);
+  color: white;
+  background: black;
+  border-radius: 5px;
 }
 @media screen and (max-width: 640px) {
   header > div > div {
@@ -95,9 +118,6 @@ header > div > div > div p {
   }
   header > div > div > div {
     width: 100%;
-  }
-  #content {
-    width: 95%;
   }
 }
 @media screen and (max-width: 2077px) {
