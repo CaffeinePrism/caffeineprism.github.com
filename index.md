@@ -10,13 +10,17 @@ I also bake from scratch!
 ## projects
 {% for project in site.data.projects %}
 <div class="project">
-    {{ project.when | split:" " | last}} -
-    {% if project.url %}
-        <a href="{{ project.url }}">{{ project.name }}</a>
-    {% else %}
-        {{ project.name }}
-    {% endif %}
-     : <span>{{ project.language }}</span> {{ project.description }}
+    <ul class="chron">
+        <li>
+            {{ project.when | split:" " | last}} &raquo;
+            {% if project.url %}
+                <a href="{{ project.url }}">{{ project.name }}</a>
+            {% else %}
+                {{ project.name }}
+            {% endif %}
+             : <span>{{ project.language }}</span> {{ project.description }}
+         </li>
+     </ul>
 </div>
 {% endfor %}
 

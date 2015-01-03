@@ -1,4 +1,5 @@
-// out: main.css
+---
+---
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800);
 
 html {
@@ -127,8 +128,6 @@ header {
 }
 
 .project {
-    padding: 7px 0;
-
     span {
         font: 0.8em/0.8em monospace;
         padding: 5px;
@@ -136,6 +135,13 @@ header {
         color: white;
         background:  black;
         border-radius: 5px;
+    }
+}
+
+.chron {
+    padding: 0;
+    li {
+        list-style-type: none;
     }
 }
 
