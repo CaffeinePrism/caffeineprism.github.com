@@ -108,6 +108,12 @@ header > div > div > div p {
   border-radius: 5px;
 }
 @media screen and (max-width: 640px) {
+  nav ul li {
+    display: block;
+  }
+  nav ul li:not(:first-child):before {
+    content: '';
+  }
   header > div > div {
     width: 85%;
     top: 5%;
