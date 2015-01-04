@@ -1,3 +1,6 @@
 sass:
     style: :compact
 permalink: "/blog/:title"
+exclude: [v1/]
+gems:
+  - jekyll-sitemap
