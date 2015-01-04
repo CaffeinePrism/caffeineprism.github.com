@@ -4,7 +4,7 @@
   description: Programmed scooper robot with RFID functionality. Team placed second.
   sourceurl:
   url: https://pioneers.berkeley.edu/home/
-  img: ../v1/img/pie2014.jpg
+  img: ../res/img/pie2014.jpg
 
 - name: KeeOTP QR
   language: C#
@@ -20,7 +20,7 @@
   description: Webapp for planning gas fill-ups on long road trips
   sourceurl: https://github.com/CaffeinePrism/gas-loc
   url: /gas-loc
-  img: ../v1/img/gas-loc-small.png
+  img: ../res/img/gas-loc-small.png
 
 - name: GameLand
   language: Java
@@ -28,7 +28,7 @@
   description: simple board game for probability project
   sourceurl: https://github.com/CaffeinePrism/GameLand
   url:
-  img: ../v1/img/gameland.png
+  img: ../res/img/gameland.png
 
 - name: GS Granite
   language: HTML/CSS/JS
@@ -36,7 +36,7 @@
   description: Full redesign of a local business’s website
   sourceurl: https://github.com/CaffeinePrism/gsgranite
   url: http://gsgranite.com
-  img: ../v1/img/granite-small.png
+  img: ../res/img/granite-small.png
 
 - name: Root Words List
   language: HTML/CSS/JS
@@ -44,4 +44,4 @@
   description: searchable root word list for high school freshman/sophomore English class
   sourceurl: https://github.com/CaffeinePrism/Root-Words-List
   url: /Root-Words-List
-  img: ../v1/img/root-word-small.png
+  img: ../res/img/root-word-small.png
