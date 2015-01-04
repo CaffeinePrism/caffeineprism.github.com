@@ -2,34 +2,46 @@
   language: C#
   when: Spring 2014
   description: Programmed scooper robot with RFID functionality. Team placed second.
-  url:
+  sourceurl:
+  url: https://pioneers.berkeley.edu/home/
+  img: ../v1/img/pie2014.jpg
 
 - name: KeeOTP QR
   language: C#
   when: Summer 2014
   description: KeePass 2 plugin for generating an otpauth URI from stored KeeOtp secret
-  url: https://github.com/CaffeinePrism/KeeOTP-QR
+  sourceurl: https://github.com/CaffeinePrism/KeeOTP-QR
+  url:
+  img:
 
 - name: GasLoc
   language: HTML/CSS/JS
   when: Spring 2014
   description: Webapp for planning gas fill-ups on long road trips
-  url: https://github.com/CaffeinePrism/gas-loc
+  sourceurl: https://github.com/CaffeinePrism/gas-loc
+  url: /gas-loc
+  img: ../v1/img/gas-loc-small.png
 
 - name: GameLand
   language: Java
   when: Winter 2013
   description: simple board game for probability project
-  url: https://github.com/CaffeinePrism/GameLand
+  sourceurl: https://github.com/CaffeinePrism/GameLand
+  url:
+  img: ../v1/img/gameland.png
 
 - name: GS Granite
   language: HTML/CSS/JS
   when: Spring 2013
   description: Full redesign of a local business’s website
+  sourceurl: https://github.com/CaffeinePrism/gsgranite
   url: http://gsgranite.com
+  img: ../v1/img/granite-small.png
 
 - name: Root Words List
   language: HTML/CSS/JS
   when: Spring 2011
   description: searchable root word list for high school freshman/sophomore English class
-  url: https://github.com/CaffeinePrism/Root-Words-List
+  sourceurl: https://github.com/CaffeinePrism/Root-Words-List
+  url: /Root-Words-List
+  img: ../v1/img/root-word-small.png

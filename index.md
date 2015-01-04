@@ -8,13 +8,13 @@ I grew up in the suburbs of the <b>San Francisco Bay Area</b>. I spent most of t
 I also bake from scratch!
 
 ## projects
-{% for project in site.data.projects %}
+{% for project in site.data.projects limit 6 %}
 <div class="project">
     <ul class="chron">
         <li>
             {{ project.when | split:" " | last}} &raquo;
-            {% if project.url %}
-                <a href="{{ project.url }}">{{ project.name }}</a>
+            {% if project.sourceurl %}
+                <a href="{{ project.sourceurl }}">{{ project.name }}</a>
             {% else %}
                 {{ project.name }}
             {% endif %}
@@ -23,6 +23,7 @@ I also bake from scratch!
      </ul>
 </div>
 {% endfor %}
+<a class="more" href="/projects">more info</a>
 
 ## latest blog posts
 {% for post in site.posts limit:5 %}
@@ -30,3 +31,4 @@ I also bake from scratch!
     <li>{{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 </ul>
 {% endfor %}
+<a class="more" href="/blog/archives">more posts</a>
