@@ -29,7 +29,7 @@ I also bake from scratch!
 ## latest blog posts
 {% for post in site.posts limit:5 %}
 <ul class="chron">
-    <li>{{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.excerpt | remove: '<p>' | remove: '</p>' }}</li>
+    <li>{{ post.date | date_to_string }} &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
 </ul>
 {% endfor %}
 <a class="more" href="/blog/archives">more posts</a>
