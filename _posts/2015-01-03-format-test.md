@@ -44,4 +44,15 @@ function fancyAlert(arg) {
 ```python
 if True:
     print "hi"
-    ```
+```
+
+{% highlight ruby %}
+def foo
+puts 'foo'
+end
+{% endhighlight %}
+
+{% highlight python %}
+if True:
+    print "hi"
+{% endhighlight %}
