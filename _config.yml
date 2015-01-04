@@ -1,4 +1,4 @@
-highlighter: rouge
+highlighter: pygments
 sass:
     style: :compact
 permalink: "/blog/:title"
