@@ -1,7 +1,10 @@
 highlighter: pygments
+kramdown:
+    input: GFM
 sass:
     style: :compact
 permalink: "/blog/:title"
 exclude: [v1/]
 gems:
   - jekyll-sitemap
+safe: true
