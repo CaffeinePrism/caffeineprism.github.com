@@ -125,16 +125,24 @@ header {
             color: white;
         }
     }
+
+    p > code {
+        padding: 0.3em;
+        margin: 0;
+        font-size: 85%;
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 3px;
+    }
 }
 
 .project {
     span {
         font: 0.8em/0.8em monospace;
-        padding: 5px;
-        border: 1px solid rgba(255, 255, 255, 0.75);
-        color: white;
-        background:  black;
-        border-radius: 5px;
+        padding: 0.3em;
+        margin: 0;
+        font-size: 85%;
+        background-color: rgba(0,0,0,0.4);
+        border-radius: 3px;
     }
     & > div {
         overflow: auto;
