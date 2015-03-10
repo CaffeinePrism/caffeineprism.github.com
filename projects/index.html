@@ -4,7 +4,7 @@ title: projects
 ---
 <div class="project">
     <h2>projects</h2>
-    {% for project in site.data.projects %}
+    {% for project in site.data.projects reversed %}
         <div>
             {% if project.img %}
                 <img src="{{ project.img }}" />

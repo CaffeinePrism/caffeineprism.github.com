@@ -9,7 +9,7 @@ I grew up in the suburbs of the <b>San Francisco Bay Area</b>. I spent most of t
 I also bake from scratch!
 
 ## projects
-{% for project in site.data.projects limit 6 %}
+{% for project in site.data.projects reversed limit 6 %}
 <div class="project">
     <ul class="chron">
         <li>
