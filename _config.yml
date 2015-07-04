@@ -7,4 +7,5 @@ permalink: "/blog/:title"
 exclude: [v1/]
 gems:
   - jekyll-sitemap
+  - jemoji
 safe: true
