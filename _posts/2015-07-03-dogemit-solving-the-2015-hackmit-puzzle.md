@@ -120,18 +120,74 @@ Clicking on the doge's nose results in a bark, followed by a weird buzzing. Two 
 
 # puzzle 5: 0xd09eeffec7
 At this point, I had to go to work, and when I came back, all of the spots were gone :disappointed:
-I guess I'll try to finish this later.
+I got the first 4 just by clicking around, but eventually I said screw it and wrote a script to find them all.
 
-This puzzle was just a maze, and here's what I managed to get before I left:
+    from lxml import html
+    import requests
+
+    BASEURL = "http://0xd09eeffec7.dogemit.party"
+
+    class Cell:
+        def __init__(self, coordinates, directions, contents):
+            self.coordinates = coordinates
+            self.top, self.left, self.right, self.down = directions
+            self.contents = contents
+
+        def __str__(self):
+            return '{}: Contents: "{}"'.format(self.coordinates, self.contents)
+
+    def parsepage(coordinates='/'):
+        page = requests.get(BASEURL + coordinates)
+        tree = html.fromstring(page.text)
+        rows = tree.xpath('//div[@class="row"]')
+
+        top = rows[0].getchildren()[1]
+        left, contents, right = rows[1].getchildren()
+        down = rows[2].getchildren()[1]
+
+        top = top.values()[0] if top.tag == 'a' else None
+        left = left.values()[0] if left.tag == 'a' else None
+        right = right.values()[0] if right.tag == 'a' else None
+        down = down.values()[0] if down.tag == 'a' else None
+
+        contents = contents.xpath('//a/text()')
+        contents = contents[0].strip() if contents else ''
+
+        return Cell(coordinates, [top, left, right, down], contents)
+
+    def parsenode(node):
+        if node:
+            if node.contents != '': print(node)
+            lastdirection = node.coordinates[-1]
+            if node.top and lastdirection != 'D':
+                node.top = parsepage(node.top)
+                parsenode(node.top)
+            if node.left and lastdirection != 'R':
+                node.left = parsepage(node.left)
+                parsenode(node.left)
+            if node.right and lastdirection != 'L':
+                node.right = parsepage(node.right)
+                parsenode(node.right)
+            if node.down and lastdirection != 'U':
+                node.down = parsepage(node.down)
+                parsenode(node.down)
+
+    start = parsepage('/U')
+    parsenode(start)
 
 | Symbol  | Number | Text | Directions from start |
-| ------- | ------ | ------- | ---------- |
+| ------- | ------ | -------: | ---------- |
 | ! | 9/9 | very m | UUUU |
 | @ | 5/9 | wow u | UUUUUUUUURRRRR |
 | $ | 7/9 | such c | UUUUUUUUURRRRRRRRDRRRRDD |
 | % | 6/9 | many h | UUUUUUUUURRRRDDRDLDDLUU |
-| - | 1/9 | - | - |
-| - | 2/9 | - | - |
-| - | 3/9 | - | - |
-| - | 4/9 | - | - |
-| - | 8/9 | - | - |
+| ^ | 8/9 | such s | UUUUUUUUURRRRDDRDLDDRRURRDRD |
+| & | 3/9 | so n | UUUUUUUUURRRRDDRDLDDRDDDRRURRRDRRDRRR |
+| * | 1/9 | much a | UUUUUUUUURRDDDDDDDLDRRDLDRDDRRR |
+| ~ | 2/9 | every r | UUUUUUUUURRDDDDDDDLDRRDLDRDDDDDDRU |
+| ? | 4/9 | such l | UUUUUUUUURRRRDDRDLDDRDDDRRRDRDDRRRRDRRRDRDDRRDDD |
+
+The answer is `much snarl`
+
+# puzzle 6: 0xd09e5ec
+This is a node.js app. The file of interest is `valiator.js`. Looks like we're trying to find a password, even and alphabet-only, where the first half has a checksum of 0xd06e, the second half has a checksum of 0xf00d, and every even character put together has a checksum of 0x000
