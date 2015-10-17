@@ -19,6 +19,9 @@ title: projects
                     <li><a href="{{ project.sourceurl }}">source code</a></li>
                 {% endif %}
                 <li>{{ project.description }}</li>
+                {% if project.extra_description %}
+                <li>{{ project.extra_description }}</li>
+                {% endif %}
             </ul>
         </div>
     {% endfor %}
