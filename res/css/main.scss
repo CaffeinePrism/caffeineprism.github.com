@@ -70,7 +70,6 @@ header {
     & > div > div { // intro block
         position: absolute;
         top: 50px;
-        left: 75px;
         z-index: 100;
 
         color: white;
@@ -80,18 +79,27 @@ header {
         span {
             font-weight: 800;
             white-space: nowrap;
+            color: #ffd200;
         }
 
         & > p {
-            margin-top: 0;
+            margin-top: -5px;
             font-size: 1.333em;
+            background: #1b3d6d;
+            line-height: 1.5em;
+            padding-left: 75px;
+            padding-right: 20px;
         }
 
         h1 {
             font-size: 3em;
+            line-height: 1.5em;
+            padding-left: 75px;
+            padding-right: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: inline;
             margin: 0;
             font-weight: 300;
-            b { font-weight: 600; }
         }
 
         & > div { // any text boxes in intro block. delete?
@@ -115,6 +123,7 @@ header {
     margin: 25px auto 75px;
 
     h2 {
+        color: #ffd200;
         margin-top: 75px;
     }
 
