@@ -220,6 +220,16 @@ tr:last-child td {
         top: 5%;
         left: 5%;
 
+        & > p {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        & > h1 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
         span {
             white-space: normal;
         }
