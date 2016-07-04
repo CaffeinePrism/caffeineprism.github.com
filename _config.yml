@@ -1,4 +1,4 @@
-highlighter: pygments
+highlighter: rogue
 kramdown:
     input: GFM
 sass:
