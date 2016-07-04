@@ -38,16 +38,18 @@ this one was strange, but straightforward once you had a rough idea what was goi
 
 the url of this puzzle was 0xd09ec0de...so dogescript? running it through a parser gives us
 
-    // this is message from dogebot
-    // pls send dogebot to hackmit
-    function bark(woof) {
-        var amaze = 'amaze ';
-        var excite = amaze + woof;
-        return excite;
-    }
-    var believe = 'robot';
-    var hack = bark(believe);
-    console.log(hack);
+```javascript
+// this is message from dogebot
+// pls send dogebot to hackmit
+function bark(woof) {
+    var amaze = 'amaze ';
+    var excite = amaze + woof;
+    return excite;
+}
+var believe = 'robot';
+var hack = bark(believe);
+console.log(hack);
+```
 
 and so the answer is obviously `amaze robot`
 
@@ -119,64 +121,68 @@ My answer was `many constant`, but from what I understand, everyone's answer was
 
 # puzzle 4: 0xff7d09e
 Clicking on the doge's nose results in a bark, followed by a weird buzzing. Two files in the source, `bark.wav` and `song.wav` were of interest. Initially I used Audacity to subtract the bark out of the track, but that was totally unnecessary. Simply dropping `song.wav` into an acoustic spectrum analyzer gives you the answer, `such hertz`. I used [Spek](http://spek.cc/) since I already had that lying around.
+
+
 ![dogemit-spek]({{ site.url }}/blog-images/dogemit-spek.png)
 
 # puzzle 5: 0xd09eeffec7
 At this point, I had to go to work, and when I came back, all of the spots were gone :disappointed:
 I got the first 4 just by clicking around, but eventually I said screw it and wrote a script to find them all.
 
-    from lxml import html
-    import requests
+```python
+from lxml import html
+import requests
 
-    BASEURL = "http://0xd09eeffec7.dogemit.party"
+BASEURL = "http://0xd09eeffec7.dogemit.party"
 
-    class Cell:
-        def __init__(self, coordinates, directions, contents):
-            self.coordinates = coordinates
-            self.top, self.left, self.right, self.down = directions
-            self.contents = contents
+class Cell:
+    def __init__(self, coordinates, directions, contents):
+        self.coordinates = coordinates
+        self.top, self.left, self.right, self.down = directions
+        self.contents = contents
 
-        def __str__(self):
-            return '{}: Contents: "{}"'.format(self.coordinates, self.contents)
+    def __str__(self):
+        return '{}: Contents: "{}"'.format(self.coordinates, self.contents)
 
-    def parsepage(coordinates='/'):
-        page = requests.get(BASEURL + coordinates)
-        tree = html.fromstring(page.text)
-        rows = tree.xpath('//div[@class="row"]')
+def parsepage(coordinates='/'):
+    page = requests.get(BASEURL + coordinates)
+    tree = html.fromstring(page.text)
+    rows = tree.xpath('//div[@class="row"]')
 
-        top = rows[0].getchildren()[1]
-        left, contents, right = rows[1].getchildren()
-        down = rows[2].getchildren()[1]
+    top = rows[0].getchildren()[1]
+    left, contents, right = rows[1].getchildren()
+    down = rows[2].getchildren()[1]
 
-        top = top.values()[0] if top.tag == 'a' else None
-        left = left.values()[0] if left.tag == 'a' else None
-        right = right.values()[0] if right.tag == 'a' else None
-        down = down.values()[0] if down.tag == 'a' else None
+    top = top.values()[0] if top.tag == 'a' else None
+    left = left.values()[0] if left.tag == 'a' else None
+    right = right.values()[0] if right.tag == 'a' else None
+    down = down.values()[0] if down.tag == 'a' else None
 
-        contents = contents.xpath('//a/text()')
-        contents = contents[0].strip() if contents else ''
+    contents = contents.xpath('//a/text()')
+    contents = contents[0].strip() if contents else ''
 
-        return Cell(coordinates, [top, left, right, down], contents)
+    return Cell(coordinates, [top, left, right, down], contents)
 
-    def parsenode(node):
-        if node:
-            if node.contents != '': print(node)
-            lastdirection = node.coordinates[-1]
-            if node.top and lastdirection != 'D':
-                node.top = parsepage(node.top)
-                parsenode(node.top)
-            if node.left and lastdirection != 'R':
-                node.left = parsepage(node.left)
-                parsenode(node.left)
-            if node.right and lastdirection != 'L':
-                node.right = parsepage(node.right)
-                parsenode(node.right)
-            if node.down and lastdirection != 'U':
-                node.down = parsepage(node.down)
-                parsenode(node.down)
+def parsenode(node):
+    if node:
+        if node.contents != '': print(node)
+        lastdirection = node.coordinates[-1]
+        if node.top and lastdirection != 'D':
+            node.top = parsepage(node.top)
+            parsenode(node.top)
+        if node.left and lastdirection != 'R':
+            node.left = parsepage(node.left)
+            parsenode(node.left)
+        if node.right and lastdirection != 'L':
+            node.right = parsepage(node.right)
+            parsenode(node.right)
+        if node.down and lastdirection != 'U':
+            node.down = parsepage(node.down)
+            parsenode(node.down)
 
-    start = parsepage('/U')
-    parsenode(start)
+start = parsepage('/U')
+parsenode(start)
+```
 
 | Symbol  | Number | Text | Directions from start |
 | ------- | ------ | -------: | ---------- |
