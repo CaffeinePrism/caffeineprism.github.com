@@ -3,6 +3,9 @@ layout: post
 title: "dogemit: solving the 2015 hackmit puzzle"
 date: "2015-07-03"
 ---
+
+such dogemit
+
 # the start
 So the 2015 hackmit website had an asset: `shibe.js`, which contained the logic to redirect you to `http://dogemit.party` about 15% of the time
 
@@ -104,8 +107,8 @@ Not too interesting. But what if all the 0's were blanks instead?
     1     1      1  1111
     1 111 1 11 1 111 1 11
     1 111 1 111  1 11
-    1 111 1 11 11    11  
-    1     1 1  111 1  1  
+    1 111 1 11 11    11
+    1     1 1  111 1  1
     1111111 111 1 11   1
 
 A QR code! But my phone scanner wasn't smart enough to read it and I wasn't really in the mood to figure out how to programmatically create bitmaps in Python, so some Photoshop was in order.
