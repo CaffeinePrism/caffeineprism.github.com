@@ -6,6 +6,7 @@ sass:
 permalink: "/blog/:title"
 exclude: [v1/]
 gems:
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jemoji
 safe: true
