@@ -71,6 +71,14 @@
   url: https://richardli.me/la-hacks-2015
   img: ../res/img/thrust.png
 
+- name: bt-imtest
+  language: Objective C
+  when: Fall 2015
+  description: Quick and dirty experiment with the OSX Bluetooth stack and the MNS/MAS Bluetooth profiles
+  sourceurl: https://github.com/CaffeinePrism/bt-imtest
+  url:
+  img:
+
 - name: FoodShip
   language: Python/Java/HTML/JS/CSS
   when: September 2015
@@ -79,3 +87,11 @@
   sourceurl: https://github.com/bchoi12/hackmit
   url:
   img: ../res/img/hackmit.png
+
+- name: frankPCB
+  language: C/KiCad EDA
+  when: Winter 2016
+  description: Replacement keyboard controller for the CM Storm QuickFire Rapid/Stealth
+  sourceurl:
+  url:
+  img: ../res/img/qrfs-controller.png
