@@ -4,9 +4,9 @@ title: Richard Li
 main: true
 ---
 ## about me
-I grew up in the suburbs of the <b>San Francisco Bay Area</b>. I spent most of that time indoors reading, watching science programs on PBS, taking apart old or broken electronics, or tackling programming languages. Occasionally I'll stay up all night to fix stuff I break.
+I grew up in the suburbs of the <b>San Francisco Bay Area</b>. I spent most of that time indoors reading, watching science programs on PBS, taking apart old or broken electronics, tackling programming languages, or pulling all nighters to fix things.
 
-I also bake from scratch!
+In my free time I like to hop on my bike and explore, occasionally stopping to snap some pics along the way.
 
 ## projects
 {% for project in site.data.projects reversed limit 6 %}
