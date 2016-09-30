@@ -9,7 +9,7 @@ I grew up in the suburbs of the <b>San Francisco Bay Area</b>. I spent most of t
 In my free time I like to hop on my bike and explore, occasionally stopping to snap some pics along the way.
 
 ## projects
-{% for project in site.data.projects reversed limit 6 %}
+{% for project in site.data.projects reversed %}
 <div class="project">
     <ul class="chron">
         <li>

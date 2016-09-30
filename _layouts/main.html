@@ -11,11 +11,13 @@
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" href="/res/css/wombat.css">
     <link rel="stylesheet" href="/res/css/main.css">
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
 
     <link rel="alternate" type="application/atom+xml" title="Richard Li" href="http://richardli.me/atom.xml">
     {% unless page.main %}
     <style>
-        header { height: 350px; }
+        header { height: 450px; }
     </style>
     {% endunless %}
     {% seo %}
@@ -24,7 +26,7 @@
 
     <header>
         <div>
-            <div>
+            <!-- <div>
                 <h1><b>richard</b>li</h1>
                 <br />
                 <p itemscope itemtype="http://schema.org/Person">
@@ -32,18 +34,26 @@
                     <meta itemprop="affiliation" content="University of California, Irvine" />
                 </p>
 
+            </div> -->
+
+            <div id="t" itemscope itemtype="http://schema.org/Person">
+                Hello my name is
+                <h1 itemprop="name">Richard Li</h1>
+                <p>
+                    I'm a third-year <span itemprop="jobTitle">Computer Science and Engineering student</span> at <span>UC Irvine</span>.
+                </p>
+                <meta itemprop="affiliation" content="University of California, Irvine" />
+                <button><a href="https://github.com/CaffeinePrism">github</a></button>
+                <button><a href="https://linkedin.com/in/richardsli">linkedin</a></button>
+                <button><a href="/resume">resume</a></button>
             </div>
 
             <nav>
                 <ul>
-                    <!-- li><a href="#resume">resume</a></li -->
                     <li><a href="/">home</a></li>
                     <li><a href="/blog">blog</a></li>
                     <li><a href="/projects">projects</a></li>
-                    <li><a href="https://github.com/CaffeinePrism">github</a></li>
-                    <li><a href="https://linkedin.com/in/richardsli">linkedin</a></li>
                     <li><a href="&#109;ail&#116;o&#58;me&#64;richardli&#46;me">me&#64;richardli&#46;me</a></li>
-                    <li><a href="/res/resume_public.pdf">resume</a></li>
                 </ul>
             </nav>
         </div>
