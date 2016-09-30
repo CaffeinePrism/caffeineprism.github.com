@@ -96,7 +96,8 @@ header {
 
         button {
             margin: 0.5em 1em;
-            border: 1px solid white;
+            border: 2px solid white;
+            border-radius: 2px;
             display: inline-block;
             color: white;
             padding: 1em 1.5em;
@@ -107,8 +108,7 @@ header {
             letter-spacing: 0.33em;
             text-transform: uppercase;
 
-            transition: box-shadow 0.3s ease;
-            box-shadow: 0 0 0 0 $uciblue inset;
+            transition: 0.3s ease;
 
             a, a:visited, a:hover {
                 text-decoration: none;
@@ -116,8 +116,7 @@ header {
             }
         }
         button:hover {
-            box-shadow: 0 100px 0 0 lighten($uciblue, 15%) inset;
-
+            background-color: lighten($uciblue, 15%);
         }
 
     }
