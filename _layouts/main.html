@@ -22,7 +22,20 @@
     {% endunless %}
 </head>
 <body>
-
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org/",
+            "@type": "Person",
+            "name": "Richard Li",
+            "jobTitle": "Computer Science and Engineering Student",
+            "url": "https://richardli.me",
+            "alumniOf": {
+                        	"@type": "EducationalOrganization",
+                            "url": "http://uci.edu",
+                            "name": "University of California, Irvine"
+                        }
+        }
+    </script>
     <header>
         <div>
             <!-- <div>
@@ -41,7 +54,7 @@
                 <p>
                     I'm a fourth-year <span itemprop="jobTitle">Computer Science and Engineering student</span> at <span>UC Irvine</span>.
                 </p>
-                <meta itemprop="affiliation" content="University of California, Irvine" />
+                <meta itemprop="alumniOf" content="University of California, Irvine" />
                 <a href="https://github.com/CaffeinePrism"><button>github</button></a>
                 <a href="https://linkedin.com/in/richardsli"><button>linkedin</button></a>
                 <a href="/resume"><button>resume</button></a>
