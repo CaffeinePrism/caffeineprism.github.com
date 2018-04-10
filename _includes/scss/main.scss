@@ -58,7 +58,7 @@ header {
             rgba(37, 37, 37, 0.6)
         ),
         // url(res/img/overlay.png),
-        url(res/img/ggbridge.jpg)
+        url(/res/img/ggbridge.jpg)
         no-repeat center center fixed;
 
     background-size: cover;
@@ -213,6 +213,15 @@ header {
             border-radius: 100%;
         }
     }
+}
+
+.highlight {
+    font-size: 0.9em;
+    padding: 0.25em;
+    white-space: pre;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;    
 }
 
 .chron {
