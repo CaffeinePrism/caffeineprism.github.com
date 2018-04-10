@@ -1,19 +1,21 @@
-<!--[if i]><![endif]-->
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
-    <!--[if ie]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ page.title }}</title>
     <meta name="author" content="Richard Li">
     <meta name="description" content="Richard Li is a Computer Science and Engineering student at the University of California, Irvine"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
-    <link rel="stylesheet" href="/res/css/main.css">
+    <style>
+        {% capture include_to_sassify %}
+        {% include scss/main.scss %}
+        {% endcapture %}
+        {{ include_to_sassify | scssify }}
+    </style>
 
-
-    <link rel="alternate" type="application/atom+xml" title="Richard Li" href="http://richardli.me/atom.xml">
     {% unless page.main %}
     <style>
         header { height: 450px; }
@@ -38,15 +40,17 @@
     <header>
         <div>
             <div>
-                Hello my name is
+                <h2>Hey, I'm</h2>
                 <h1>Richard Li</h1>
                 <p>
-                    I'm a fourth-year <span>Computer Science and Engineering student</span> at
+                    I am a fourth-year <span>Computer Science and Engineering student</span> at
                         <span><abbr title="University of California, Irvine">UCI</abbr></span>.
                 </p>
-                <a href="https://github.com/CaffeinePrism"><button>github</button></a>
-                <a href="https://linkedin.com/in/richardsli"><button>linkedin</button></a>
-                <a href="/resume"><button>resume</button></a>
+                <ul>
+                    <li><a href="https://github.com/CaffeinePrism">github</a></li>
+                    <li><a href="https://linkedin.com/in/richardsli">linkedin</a></li>
+                    <li><a href="/resume">resume</a></li>
+                </ul>
             </div>
 
             <nav>
@@ -64,5 +68,7 @@
     <div id="content">
         {{ content }}
     </div>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800" />
 </body>
 </html>

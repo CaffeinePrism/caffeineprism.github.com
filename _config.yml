@@ -1,11 +1,12 @@
 highlighter: rouge
 kramdown:
-    input: GFM
+  input: GFM
 sass:
-    style: :compact
+    style: compressed
 permalink: "/blog/:title"
 exclude: [v1/]
-gems:
+plugins:
+  - jekyll-github-metadata
   - jekyll-sitemap
   - jemoji
 safe: true
