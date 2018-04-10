@@ -216,12 +216,15 @@ header {
 }
 
 .highlight {
-    font-size: 0.9em;
-    padding: 0.25em;
     white-space: pre;
     white-space: pre-wrap;
     word-break: break-all;
-    word-wrap: break-word;    
+    word-wrap: break-word;
+
+    > pre {
+        font-size: 0.8em;
+        padding: 1em;
+    }
 }
 
 .chron {
