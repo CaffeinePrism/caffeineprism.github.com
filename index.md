@@ -11,7 +11,7 @@ In my free time I like to hop on my bike and explore, occasionally stopping to s
 
 ## projects
 
-{% assign sorted_repos = site.github.public_repositories | sort: 'updated_at | date' %}
+{% assign sorted_repos = site.github.public_repositories | sort: "pushed_at" | reverse %}
 
 {% for repository in sorted_repos %}
 <div class="project">
