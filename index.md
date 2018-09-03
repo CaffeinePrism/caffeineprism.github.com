@@ -3,6 +3,7 @@ layout: main
 title: Richard Li
 main: true
 ---
+{% comment %} 
 ## about me
 
 I grew up in the suburbs of the <b>San Francisco Bay Area</b>. I spent most of that time indoors reading, watching science programs on PBS, taking apart old or broken electronics, tackling programming languages, or pulling all nighters to fix things.
@@ -42,3 +43,4 @@ In my free time I like to hop on my bike and explore, occasionally stopping to s
 </ul>
 {% endfor %}
 <a class="more" href="/blog/archives">more posts</a>
+{% endcomment %}
