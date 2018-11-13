@@ -5,13 +5,13 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ page.title }}</title>
     <meta name="author" content="Richard Li">
-    <meta name="description" content="Richard Li is a Computer Science and Engineering student at the University of California, Irvine"/>
+    <meta name="description" content="Richard Li is a Software Development Engineer at Amazon"/>
     <meta name="viewport" content="width=device-width,minimum-scale=1.0">
 
-    <link rel="stylesheet" href="/res/native.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <!-- <link rel="stylesheet" href="/res/native.css"> -->
     <style>
         {% capture include_to_sassify %}
+        {% include normalize.css %}
         {% include scss/main.scss %}
         {% endcapture %}
         {{ include_to_sassify | scssify }}
